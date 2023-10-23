@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" type="text/css" href="new.css">
+</head>
+<body>
+    <script src="new.js"></script>
+    <h1>Attendance Management System</h1>
+    <div id="menu">
+        <ul>
+            <li><a href="#addStudent">Add Student</a></li>
+            <li><a href="#addCourse">Add Course</a></li>
+            <li><a href="#markAttendance">Mark Attendance</a></li>
+            <li><a href="#generateReport">Generate Report</a></li>
+        </ul>
+    </div>
+
+    <div id="addStudent">
+        <h2>Add Student</h2>
+        <form id="addStudentForm">
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" name="studentId" required><br>
+
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" required><br>
+
+            <input type="submit" value="Add Student">
+        </form>
+    </div>
+
+    <div id="addCourse">
+        <h2>Add Course</h2>
+        <form id="addCourseForm">
+            <label for="courseCode">Course Code:</label>
+            <input type="text" id="courseCode" name="courseCode" required><br>
+
+            <label for="courseName">Course Name:</label>
+            <input type="text" id="courseName" name="courseName" required><br>
+
+            <input type="submit" value="Add Course">
+        </form>
+    </div>
+
+    <div id="markAttendance">
+        <h2>Mark Attendance</h2>
+        <form id="markAttendanceForm">
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" name="studentId" required><br>
+
+            <label for="courseCode">Course Code:</label>
+            <input type="text" id="courseCode" name="courseCode" required><br>
+
+            <label for="isPresent">Present (true/false):</label>
+            <input type="text" id="isPresent" name="isPresent" required><br>
+
+            <input type="submit" value="Mark Attendance">
+        </form>
+    </div>
+
+    <div id="generateReport">
+        <h2>Generate Attendance Report</h2>
+        <form id="generateReportForm">
+            <label for="courseCode">Course Code:</label>
+            <input type="text" id="courseCode" name="courseCode" required><br>
+
+            <input type="submit" value="Generate Report">
+        </form>
+    </div>
+</body>
+</html>
